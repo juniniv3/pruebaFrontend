@@ -1,0 +1,43 @@
+.formSection{
+
+}
+#formArray{
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  width:max-content;
+  max-width: 600px;
+  margin: auto;
+}
+#btnGenerar{
+  width: 90%;
+  min-width: 400px;
+  height: 30px;
+}
+#inputSizeArray{
+  margin-bottom: 4px;
+  height: 30px;
+  width: 90%;
+  min-width: 395px;
+}
+#inputSortArray{
+  margin-bottom: 4px;
+  height: 30px;
+  width: 90%;
+  min-width: 395px;
+}
+.arrayElements{
+  margin: 0;
+  margin-bottom: 2px;
+}
+.labelSize{
+  font-size: 20px;
+}
+.arraySection{
+  display: flex;
+  flex-direction: row;
+}
+.orderedArray{
+  margin-left: auto;
+}

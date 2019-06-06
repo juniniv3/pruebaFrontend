@@ -1,0 +1,25 @@
+
+<div class="container">
+
+    <div class="formSection">
+      <form [formGroup]="arrayForm" (ngSubmit)="generateArray()" id="formArray">
+        <label class="labelSize" for="">Tamaño del array
+          <input  formControlName="size"  id="inputSizeArray" type="number">
+        </label>
+        <input  id="btnGenerar" type="submit" value="Generar">
+      </form>
+      <input id="inputSortArray" (click)="sortArray()" type="button" value="Ordenar Array">
+    </div>
+
+    <div class="arraySection">
+      <div class="unorderedArray">
+        <h2>Array generado</h2>
+        <p class="arrayElements" *ngFor="let number of numberList; ">{{number}}</p>
+      </div>
+      <div class="orderedArray">
+        <h2>Array Ordenado</h2>
+        <p class="arrayElements" *ngFor="let number2 of numberListOrdered; ">{{number2}}</p>
+      </div>
+    </div>
+
+</div>
